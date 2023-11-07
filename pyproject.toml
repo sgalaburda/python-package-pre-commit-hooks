@@ -1,0 +1,25 @@
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'python-package-pre-commit-hooks'
+authors = [
+    {name = 'Sergiy Galaburda', email = 'sergiy.galaburda@gmail.com'},
+]
+description = 'pre-commit hooks for python packages'
+version = '0.0.1'
+readme = 'README.md'
+requires-python = '>=3.7'
+classifiers = [
+    'Programming Language :: Python :: 3',
+]
+dependencies = [
+    'pytest>=7.4.3,<8',
+    'pytest-cov>=4.1.0,<5',
+    'isort>=5.12.0,<6',
+    'black==23.10.1',
+    'flake8>=6.1.0,<7',
+    'flake8-quotes>=3.3.2,<4',
+    'pre-commit>=3.5.0,<4',
+]
