@@ -22,7 +22,7 @@
 -   id: tests
     name: run tests
     description: Run unit tests
-    entry: pytest --cov-report=term-missing --cov-fail-under=80 tests
+    entry: .venv/bin/pytest --cov-report=term-missing --cov-fail-under=80 tests
     language: python
     pass_filenames: false
     always_run: true
