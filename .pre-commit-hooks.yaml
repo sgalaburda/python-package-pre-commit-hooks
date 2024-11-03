@@ -1,7 +1,7 @@
 -   id: black
     name: check black
     description: Check python files formatting with black
-    entry: black --skip-string-normalization --check
+    entry: black --skip-string-normalization --check --line-length=100
     language: python
     types: [python]
     stages: [commit, manual]
@@ -15,7 +15,7 @@
 -   id: flake8
     name: check flake8
     description: Check files syntax with flake8
-    entry: flake8 --inline-quotes "'" --docstring-quotes '"' --multiline-quotes '"'
+    entry: flake8 --inline-quotes "'" --docstring-quotes '"' --multiline-quotes '"' --max-line-length=100
     language: python
     types: [python]
     stages: [commit, manual]
