@@ -1,14 +1,14 @@
 -   id: black
     name: check black
     description: Check python files formatting with black
-    entry: black --skip-string-normalization --check --line-length=100
+    entry: black --skip-string-normalization --line-length=100
     language: python
     types: [python]
     stages: [commit, manual]
 -   id: isort
     name: check isort
     description: Check imports order with isort
-    entry: isort --check-only --line-length 100 --lines-after-imports 2
+    entry: isort --line-length 100 --lines-after-imports 2 --profile black
     language: python
     types: [python]
     stages: [commit, manual]
